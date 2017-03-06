@@ -1558,8 +1558,8 @@ public class PhoneAccountRegistrar {
                             }
                         }
                         if (accountHandle != null && userHandle != null) {
-                            return new DefaultPhoneAccountHandle(userHandle, accountHandle,
-                                    groupId != null ? groupId : "");
+                            return new DefaultPhoneAccountHandle(userHandle, accountHandle
+                                    , (groupId != null) ? groupId : "");
                         }
                     }
                     return null;
